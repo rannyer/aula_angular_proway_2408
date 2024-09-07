@@ -1,33 +1,17 @@
-
-<app-list-musica></app-list-musica>
-<app-list-card></app-list-card>
-
-<h2>Nomes:</h2>
-<ul>
-  <li *ngFor="let nome of nomes" >
-    {{nome}}
-  </li >
-</ul>
-
-<h2>Frutas</h2>
-<ul>
-  <li *ngFor="let fruta of frutas" >{{fruta}}</li>
-</ul>
-
-<h2>Filmes</h2>
-<ul>
-  <li *ngFor="let filme of filmes" >{{filme}}</li>
-</ul>
-
-<img [src]="url" [alt]="'leao'" (click)="rodarAlerta()" width="200px">
-
-
-
-
-
-
-
-
-
-
-
+<header>
+  <div class="logo">
+    <h1>SPA</h1>
+  </div>
+  <nav>
+    <a href="/exemploAnimal">
+      <p>Exemplo-Animal</p>
+    </a>
+    <a href="/listCard">
+      <p>List-Card</p>
+    </a>
+    <a href="/listMusica">
+      <p>List-Musica</p>
+    </a>
+  </nav>
+</header>
+<router-outlet></router-outlet>

@@ -4,12 +4,13 @@ import { CardComponent } from './components/exemplo-card/card/card.component';
 import { CommonModule } from '@angular/common';
 import { ListCardComponent } from "./components/exemplo-card/list-card/list-card.component";
 import { ListMusicaComponent } from "./components/exercicio-musica/list-musica/list-musica.component";
+import { ExemploAnimalComponent } from "./components/exemplo-animal/exemplo-animal.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CardComponent, CommonModule, ListCardComponent, ListMusicaComponent],
+  imports: [RouterOutlet, CardComponent, CommonModule, ListCardComponent, ListMusicaComponent, ExemploAnimalComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

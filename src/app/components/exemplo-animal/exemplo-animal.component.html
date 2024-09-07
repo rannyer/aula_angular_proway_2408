@@ -1,0 +1,14 @@
+
+@if(isActive){
+    <h1>Lista de animais</h1>
+}
+
+@for (item of animais; track $index) {
+    <div [class]="class" >
+        
+        <h1>{{$index}} - {{item}}</h1>
+    </div>
+}
+
+<button (click)="onClick()" >Ativar</button>
+
